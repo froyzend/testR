@@ -1,0 +1,22 @@
+.aboutMe {
+
+    padding: 60px 0;
+    /*
+    box-shadow: 0 8px 92px 20px rgba(71, 28, 115, .7);
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    border: 1px solid #101010;*/
+
+}
+
+.unicornInfo {
+    max-width: 600px;
+    padding: 32px;
+    background-color: #171515;
+    box-shadow: 0 8px 92px 20px rgba(71, 28, 115, .7);
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    border: 1px solid #101010;
+}

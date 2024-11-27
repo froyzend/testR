@@ -1,0 +1,45 @@
+.navList {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.link {
+    box-shadow: 0 0 20px rgba(113, 110, 110, 0.281);
+    text-decoration: none;
+    padding: 8px 16px;
+
+    border-radius: 5px;
+    transition: background-color 0.3s ease, filter 0.3s ease;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.link:hover {
+    background-color: #242223;
+    filter: drop-shadow(2px 4px 4px rgb(80, 24, 99));
+}
+
+
+
+.socialIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.socialIcon {
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    filter: drop-shadow(1px 2px 2px rgb(147, 138, 150));
+    transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+    color: #ff007f;
+}
