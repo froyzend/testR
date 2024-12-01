@@ -3,7 +3,7 @@ import css from "./About.module.css";
 
 const About = () => {
   return (
-    <section className={css.aboutMe}>
+    <section id="about" className={css.aboutMe}>
       <div className={css.unicornInfo}>
         <div className={css.textContainer}>
           <h1 className={css.titleAbout}>Welcome to My Portfolio</h1>

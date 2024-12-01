@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import css from "./NavList.module.css";
 
 const NavList = () => {
@@ -6,19 +6,19 @@ const NavList = () => {
     <nav>
       <ul className={css.navList}>
         <li>
-          <Link className={css.link} to="/about">
+          <HashLink className={css.link} to="/#about">
             About
-          </Link>
+          </HashLink>
         </li>
         <li>
-          <Link className={css.link} to="/projects">
+          <HashLink className={css.link} to="/#projects">
             Projects
-          </Link>
+          </HashLink>
         </li>
         <li>
-          <Link className={css.link} to="/contact">
+          <HashLink className={css.link} to="/#contact">
             Contact
-          </Link>
+          </HashLink>
         </li>
       </ul>
     </nav>

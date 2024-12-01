@@ -3,7 +3,7 @@ import css from "./Projects.module.css";
 
 const Projects = () => {
   return (
-    <section className={css.project}>
+    <section id="projects" className={css.project}>
       <div className={css.container}>
         <h2 className={css.title}>My Projects</h2>
         <div className={css.projectList}>

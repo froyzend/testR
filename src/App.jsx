@@ -1,7 +1,7 @@
-import { Routes, Route } from "react-router-dom";
 import "modern-normalize/modern-normalize.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import ScrollToSection from "./components/ScrollToSection/ScrollToSection";
 import { lazy, Suspense } from "react";
 import Loader from "./components/Loader/Loader";
 import Starfield from "react-starfield";
@@ -18,16 +18,12 @@ function App() {
         speedFactor={0.05}
         backgroundColor="black"
       />
+      <ScrollToSection />
       <Header />
       <Suspense fallback={<Loader />}>
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/" element={<Projects />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<ContactForm />} />
-          <Route path="*" element={<div>404 - Page Not Found</div>} />
-        </Routes>
+        <About />
+        <Projects />
+        <ContactForm />
       </Suspense>
       <Footer />
     </div>
