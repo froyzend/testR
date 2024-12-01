@@ -8,7 +8,7 @@ const About = () => {
         <div className={css.textContainer}>
           <h1 className={css.titleAbout}>Welcome to My Portfolio</h1>
           <h2 className={css.unicornName}>
-            <strong> &#34;My name is Kateryna Folova</strong>,
+            <strong> &#34;My name is Kateryna Frolova</strong>,
           </h2>
           <p className={css.descriptionText}>
             and I&apos;m passionate about technology and personal development.

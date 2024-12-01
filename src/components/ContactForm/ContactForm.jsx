@@ -1,6 +1,7 @@
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import css from "./ContactForm.module.css";
+import { FaRegEnvelope } from "react-icons/fa";
 
 const ContactForm = () => {
   const validationSchema = Yup.object({
@@ -24,8 +25,11 @@ const ContactForm = () => {
       >
         {() => (
           <Form className={css.FormContainer}>
+            <h2 className={css.contactTitle}>
+              Contact Me
+              <FaRegEnvelope className={css.icon} />
+            </h2>
             <div className={css.formWrapper}>
-              <h2 className={css.label}>Contact</h2>
               <div className={css.field}>
                 <label htmlFor="name" className={css.label}>
                   Name

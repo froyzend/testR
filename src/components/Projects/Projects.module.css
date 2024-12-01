@@ -42,6 +42,10 @@
     object-fit: cover;
 }
 
+a {
+    text-decoration: none;
+}
+
 .projectTitle {
     color: rgb(212, 171, 5);
     font-size: 20px;
