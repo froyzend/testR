@@ -17,6 +17,65 @@
     transform: scaleX(-1)
 }
 
+/* Стили для планеты с кольцами */
+.planetIcon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    /* Отступ от других элементов */
+    animation: rotatePlanet 10s infinite linear;
+    /* Вращение всей планеты */
+}
+
+/* Кольцо вокруг планеты */
+.ring {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #ffffffa1;
+    filter: drop-shadow(4px 4px 4px rgba(108, 7, 81, 0.667));
+    border-radius: 50%;
+    top: -20px;
+    left: -20px;
+    animation: spinRing 5s infinite linear;
+}
+
+/* Сама планета */
+.planet {
+    width: 40px;
+    height: 40px;
+    background-color: #4b0082;
+    /* Цвет планеты */
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Анимация для вращения планеты */
+@keyframes rotatePlanet {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Анимация для вращения кольца */
+@keyframes spinRing {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 input {
     padding: 10px;
     border: 1px solid #ccc;
