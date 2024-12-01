@@ -1,16 +1,19 @@
 import SocialIcons from "../NavList/SocialIcons";
+import css from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="footerContentTop">
-          <h4>Social Media</h4>
+    <footer className={css.footer}>
+      <div className={css.container}>
+        <div className={css.footerContentTop}>
+          <h4 className={css.title}>Social Media</h4>
           <SocialIcons />
         </div>
-        <div className="footerContentBottom">
-          <p>Created by Kateryna Folova</p>
-          <p>&copy; 2023 Kateryna. All rights reserved.</p>
+        <div className={css.footerContentBottom}>
+          <p className={css.copyright}>Created by Kateryna Folova</p>
+          <p className={css.copyright}>
+            &copy; 2023 Kateryna. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
