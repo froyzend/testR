@@ -1,4 +1,4 @@
-.Form {
+/*.Form {
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -23,4 +23,123 @@
 .error {
     color: red;
     font-size: 16px;
+}
+
+.label {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.inputField {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputField:focus {
+    border: 2px solid #4CAF50;
+}
+
+.textareaField {
+    padding: 10px;
+    min-width: 300px;
+
+}*/
+
+.error {
+    color: red;
+    font-size: 16px;
+}
+
+.FormContainer {
+    width: 100%;
+    background-color: #ffffff3d;
+    padding: 100px;
+    border-radius: 20px;
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+}
+
+.button {
+    background-color: #4b2a67;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.textareaField {
+    width: 100%;
+    color: #bdb8b8;
+    font-size: 15px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(100, 21, 173);
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+    outline: 0px transparent !important;
+}
+
+.textareaField:focus {
+    border: 2px solid #4CAF50;
+}
+
+
+.field {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.inputField {
+    color: #f1e7e7;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputField:focus {
+    border: 2px solid #4CAF50;
+
+}
+
+
+.label {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2a2929;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formWrapper {
+
+    border: 2px solid transparent;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff3d;
+    box-shadow: 0 8px 92px 20px rgba(71, 28, 115, .7);
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto;
 }

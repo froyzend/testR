@@ -1,64 +1,79 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import { useId } from "react";
+import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { nanoid } from "nanoid";
 import css from "./ContactForm.module.css";
 
-const schema = Yup.object().shape({
-  name: Yup.string()
-    .min(3, "Name must be at least 3 characters")
-    .max(50, "Name must be at most 50 characters")
-    .required("Required"),
-  number: Yup.string()
-    .min(3, "Number must be at least 3 characters")
-    .max(50, "Number must be at most 50 characters")
-    .required("Required"),
-});
+const ContactForm = () => {
+  const validationSchema = Yup.object({
+    name: Yup.string().required("Name required"),
+    email: Yup.string()
+      .email(" email is invalid")
+      .required("Email is required"),
+    message: Yup.string().required("Message required"),
+  });
 
-const initialValues = {
-  name: "",
-  number: "",
-};
-
-const ContactForm = ({ onSubmit }) => {
-  const nameFieldId = useId();
-  const numberFieldId = useId();
-
-  const handleSubmit = (values, actions) => {
-    const newContact = {
-      id: nanoid(),
-      ...values,
-    };
-    onSubmit(newContact);
-    actions.resetForm();
+  const handleSubmit = (values) => {
+    console.log("Form data:", values);
   };
 
   return (
     <Formik
-      initialValues={initialValues}
+      initialValues={{ name: "", email: "", message: "" }}
+      validationSchema={validationSchema}
       onSubmit={handleSubmit}
-      validationSchema={schema}
     >
-      <Form className={css.Form}>
-        <div className={css.field}>
-          <label htmlFor={nameFieldId}>Name</label>
-          <Field type="text" name="name" placeholder="Name" id={nameFieldId} />
-          <ErrorMessage className={css.error} name="name" component="span" />
-        </div>
+      <Form className={css.FormContainer}>
+        <div className={css.formWrapper}>
+          <div className={css.field}>
+            <label htmlFor="name" className={css.label}>
+              Name
+            </label>
+            <Field
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              className={css.inputField}
+            />
+            <ErrorMessage name="name" component="div" className={css.error} />
+          </div>
 
-        <div className={css.field}>
-          <label htmlFor={numberFieldId}>Number</label>
-          <Field
-            type="text"
-            name="number"
-            placeholder="Number"
-            id={numberFieldId}
-          />
-          <ErrorMessage className={css.error} name="number" component="span" />
+          <div className={css.field}>
+            <label htmlFor="email" className={css.label}>
+              Email
+            </label>
+            <Field
+              type="email"
+              id="email"
+              name="email"
+              placeholder=" Your email"
+              className={css.inputField}
+            />
+            <ErrorMessage name="email" component="div" className={css.error} />
+          </div>
+
+          <div className={css.field}>
+            <label htmlFor="message" className={css.label}>
+              Message
+            </label>
+            <Field
+              as="textarea"
+              id="message"
+              name="message"
+              placeholder="Your message"
+              rows="4"
+              className={css.textareaField}
+            />
+            <ErrorMessage
+              name="message"
+              component="div"
+              className={css.error}
+            />
+          </div>
+
+          <button type="submit" className={css.button}>
+            Submit
+          </button>
         </div>
-        <button className={css.button} type="submit">
-          Add
-        </button>
       </Form>
     </Formik>
   );

@@ -1,4 +1,3 @@
-import NavList from "../NavList/NavList";
 import SocialIcons from "../NavList/SocialIcons";
 
 const Footer = () => {
@@ -7,7 +6,6 @@ const Footer = () => {
       <div className="container">
         <div className="footerContentTop">
           <h4>Social Media</h4>
-          <NavList />
           <SocialIcons />
         </div>
         <div className="footerContentBottom">

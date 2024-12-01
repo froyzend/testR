@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Website Development Project",
+    "description": "Development of a modern, adaptive, and functional website for small businesses.",
+    "image": "https://www.techosquare.com/images/blog/website-development-project-plan-home.jpg",
+    "link": "https://example.com/project1"
+  },
+  {
+    "id": 2,
+    "title": "Food Delivery Mobile App",
+    "description": "A mobile app for convenient food delivery with map integration and payment systems.",
+    "image": "https://twinr.dev/wp-content/uploads/2024/06/1.-Featured-Image-4-1024x536.webp",
+    "link": "https://example.com/project2"
+  },
+  {
+    "id": 3,
+    "title": "Task Management System",
+    "description": "A web application for managing tasks and projects with calendar integration and notification systems.",
+    "image": "https://www.meistertask.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F289344%2F1521x1001%2F61554d4bfc%2Fui-image_project-management.png%2Fm%2F&w=3840&q=75",
+    "link": "https://example.com/project3"
+  },
+  {
+    "id": 4,
+    "title": "Online Clothing Store",
+    "description": "Development of an online platform for selling clothing with filtering options by category and size.",
+    "image": "https://genovawebart.com/hubfs/img/webp/blog-article-best-shopify-clothing-stores-modcloth-online-clothing-store-on-shopify-homepage-and-navigation-menu-screenshot.webp",
+    "link": "https://example.com/project4"
+  },
+  {
+    "id": 5,
+    "title": "Online Courses Platform",
+    "description": "Creation of a platform for online education with video lessons, tests, and certification.",
+    "image": "https://www.wpbeginner.com/wp-content/uploads/2021/01/online-course-platforms-og.png",
+    "link": "https://example.com/project5"
+  },
+  {
+    "id": 6,
+    "title": "Online Courses Platform",
+    "description": "Creation of a platform for online education with video lessons, tests, and certification.",
+    "image": "https://kripesh.b-cdn.net/wp-content/uploads/2023/04/Ed-App-homepage.jpg",
+    "link": "https://example.com/project5"
+  }
+]
